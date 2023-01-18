@@ -12,6 +12,6 @@ export default function destructuring (character) {
       } else {
         targetArray.push(object);
       }
-    };
+    }
     return targetArray
 }

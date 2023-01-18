@@ -8,7 +8,7 @@ export default function orderByProps (obj, props) {
           value: obj[item]
         };
         targetArray.push(information);
-      };
+      }
     for (let item in obj) {
         if (!props.includes(item)) {
             const information = {
@@ -16,10 +16,10 @@ export default function orderByProps (obj, props) {
             value: obj[item]
         };
         sortedArray.push(information);
-        };
-    };
+        }
+    }
 
     sortedArray.sort((a, b) => (a.key > b.key ? 1 : -1));
 
     return [...targetArray, ...sortedArray]
-};
+}
